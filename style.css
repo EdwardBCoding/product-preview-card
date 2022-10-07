@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+/* Tiny Reset */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+
+:root{
+    --bg-color: hsl(30, 38%, 92%);
+    --atn-color: hsl(158, 36%, 37%);
+    --hover-color: hsl(158, 47%, 21%);
+    --card-color: hsl(0, 0%, 100%);
+    --heading-color: hsl(212, 21%, 14%);
+    --text-color: hsl(228, 12%, 48%);
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Fraunces', serif;
+}
+
+/* Styles - fonts and colors */
+
+body{
+    font-size: 14px;
+    background-color: var(--bg-color);
+}
+
+main{
+    background-color: var(--card-color);
+}
+
+h2,
+p,
+h4 {
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+h1{
+    color: var(--heading-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+h3{
+    color: var(--atn-color);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h4{
+    text-decoration: line-through;
+}
+
+/* Layout */
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    max-width: 360px;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.text-container{
+    padding: 1rem 2rem;
+}
+
+h2{
+    padding-bottom: 0.5rem;
+}
+
+h1{
+    padding-bottom: 1rem;
+}
+
+p{
+    padding-bottom: 0.5rem;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: var(--atn-color);
+    color: var(--card-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 20px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    transition: background-color 0.5s;
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button:hover{
+    background-color: var(--hover-color);
+    transition: background-color 0.5s;
+}
+
+
+/* Break point */
+
+@media (min-width:700px){
+    main{
+        max-width: 600px;
+        flex-direction: row;
+    }
+    .text-container{
+        max-width: 50%;
+        padding: 2rem 2rem;
+    }
+    h2{
+        padding-bottom: 1rem;
+    }
+    h1{
+        padding-bottom: 1.5rem;
+    }
+    p{
+        padding-bottom: 1rem;
+    }
+    span{
+        padding-bottom: 1rem;
+    }
+}
+
+/* 
+
+img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+h2{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+h1{
+    font-family: var(--secondary-font);
+    color: var(--heading-color);
+}
+
+p{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    color: var(--text-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h3{
+    font-size: 2rem;
+    margin-right: 1rem;
+    font-family: var(--secondary-font);
+    color: var(--atn-color);
+}
+
+h4{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+
+*/ 
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 0.3rem;
+}
+
+.attribution {
+    font-family: var(--primary-font);
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
