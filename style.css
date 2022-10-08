@@ -109,7 +109,7 @@ p{
 span{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .button-container{
@@ -166,54 +166,8 @@ button:hover{
     }
 }
 
-/* 
+/* footer */
 
-img{
-    max-inline-size: 100%;
-    block-size: auto;
-}
-
-h2{
-    font-family: var(--primary-font);
-    font-weight: 500;
-    color: var(--text-color);
-}
-
-h1{
-    font-family: var(--secondary-font);
-    color: var(--heading-color);
-}
-
-p{
-    font-family: var(--primary-font);
-    font-weight: 500;
-    color: var(--text-color);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-span{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-h3{
-    font-size: 2rem;
-    margin-right: 1rem;
-    font-family: var(--secondary-font);
-    color: var(--atn-color);
-}
-
-h4{
-    font-family: var(--primary-font);
-    color: var(--text-color);
-    font-weight: 500;
-    text-decoration: line-through;
-}
-
-
-*/ 
 footer{
     position: fixed;
     bottom: 0;
